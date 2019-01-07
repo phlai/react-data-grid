@@ -300,13 +300,6 @@
         "required": false,
         "description": ""
       },
-      "column": {
-        "type": {
-          "name": "object"
-        },
-        "required": true,
-        "description": ""
-      },
       "isEditorEnabled": {
         "type": {
           "name": "bool"
@@ -326,6 +319,13 @@
           "name": "number"
         },
         "required": false,
+        "description": ""
+      },
+      "column": {
+        "type": {
+          "name": "object"
+        },
+        "required": true,
         "description": ""
       },
       "value": {
@@ -1753,6 +1753,13 @@
         "returns": null
       },
       {
+        "name": "getRowTop",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
         "name": "getRowHeight",
         "docblock": null,
         "modifiers": [],
@@ -1790,6 +1797,18 @@
         "params": [
           {
             "name": "scrollLeft",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "setRowRef",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "el",
             "type": null
           }
         ],

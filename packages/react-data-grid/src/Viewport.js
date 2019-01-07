@@ -254,7 +254,13 @@ class Viewport extends React.Component {
       position: 'absolute',
       top: this.props.rowOffsetHeight
     };
+
+    const style2 = {
+      position: 'absolute',
+      top: this.state.height + this.props.rowHeight
+    };
     return (
+      <div>
       <div
         className="react-grid-Viewport"
         style={style}
@@ -311,6 +317,9 @@ class Viewport extends React.Component {
           prevScrollTop={this.state.prevScrollTop}
         />
       </div>
+      <div style={style2}>
+      This is the footer row
+    </div></div>
     );
   }
 }

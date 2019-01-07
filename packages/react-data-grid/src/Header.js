@@ -101,7 +101,7 @@ class Header extends React.Component {
         top: this.getCombinedHeaderHeights(index),
         left: 0,
         width: updatedWidth,
-        overflowX: 'hidden',
+        overflowX: 'visible',
         minHeight: rowHeight
       };
 

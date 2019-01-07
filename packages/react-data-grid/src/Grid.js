@@ -86,8 +86,9 @@ class Grid extends React.Component {
       overflow: 'hidden',
       outline: 0,
       position: 'relative',
-      minHeight: this.props.minHeight
+      minHeight: 'calc(100vh - 100px)'
     };
+    // this.props.minHeight
   };
 
   _onScroll = () => {
@@ -163,6 +164,7 @@ class Grid extends React.Component {
           cellMetaData={this.props.cellMetaData}
           />
           {this.props.rowsCount >= 1 || (this.props.rowsCount === 0 && !this.props.emptyRowsView) ?
+          <div>
             <div
               ref={this.setViewportContainerRef}
               onKeyDown={this.props.onViewportKeydown}
@@ -209,6 +211,8 @@ class Grid extends React.Component {
                   onCommit={this.props.onCommit}
                   RowsContainer={this.props.RowsContainer}
                 />
+            </div>
+              
             </div>
         :
             <div ref={this.setEmptyViewRef} className="react-grid-Empty">
